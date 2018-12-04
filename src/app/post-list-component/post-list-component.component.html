@@ -1,0 +1,13 @@
+<li [ngClass]="{'list-group-item': true,
+
+                'list-group-item-success': onLove() > 0,
+                'list-group-item-danger': notLove() < 0
+
+               } ">
+  <b> Post: {{title}}</b>
+  <p>Commentaire: {{content}} -- created at: {{created_at | date:'short'}}</p>
+  <button class="btn btn-primary" (click)="onLove()" >I love it </button>
+  <button class="btn btn-danger" (click)="notLove()"> I don't love it</button>
+
+
+</li>

@@ -7,4 +7,34 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+
+  posts = [
+      {
+
+        title: 'post1',
+          content: ' Lorem ipsum',
+          loveits: 0,
+          created_at: Date()
+      },
+
+      {
+
+          title: 'post2',
+          content: ' Lorem ipsum ',
+          loveits: 0,
+          created_at: Date()
+      },
+
+      {
+
+          title: 'post3',
+          content: ' Lorem ipsum ',
+          loveits: 0,
+          created_at: Date()
+      },
+  ];
+  consulter () {
+      console.log('consultons');
+  }
+
 }
